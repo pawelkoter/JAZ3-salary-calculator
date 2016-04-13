@@ -34,7 +34,7 @@
                         <label class="radio-inline"><input type="radio" id="" name="contract_type" value="mandate" onclick="showMandateContractFields()"/>zlecenie</label>
                     </div>
                     <div class="col-sm-4">
-                        <label class="radio-inline"><input type="radio" id="" name="contract_type" value="comission" onclick="showComiisionContractFields()"/>o&nbsp;dzieło</label>
+                        <label class="radio-inline"><input type="radio" id="" name="contract_type" value="commission" onclick="showCommissionContractFields()"/>o&nbsp;dzieło</label>
                     </div>
                 </div>
             </div>
@@ -123,7 +123,7 @@
         showElement("tax_deduction_group");
     }
 
-    function showComiisionContractFields() {
+    function showCommissionContractFields() {
         hideElement("pension_insurance_group");
         hideElement("disability_insurance_group");
         hideElement("healthcare_insurance_group");
