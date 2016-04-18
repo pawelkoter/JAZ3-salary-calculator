@@ -89,7 +89,7 @@
                 </div>
             </div>
             <!-- UMOWA O DZIEŁO -->
-            <div id="tax_deduction_group" class="form-group">
+            <div id="tax_deduction_group" class="form-group hidden">
                 <label class="control-label col-sm-offset-1 col-sm-3">Koszt uzyskania przychodu:</label>
                 <div class="col-sm-4">
                     <label class="radio-inline"><input type="radio" id="" name="tax_deduction" value="20" checked/>20%</label>
