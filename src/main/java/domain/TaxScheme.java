@@ -8,7 +8,7 @@ import java.util.TreeMap;
 
 public class TaxScheme {
 
-    private List< BigDecimal > taxTresholds = Arrays.asList(
+    private List< BigDecimal > taxThresholds = Arrays.asList(
             BigDecimal.ZERO,
             new BigDecimal( "3091" ),
             new BigDecimal( "85528" )
@@ -25,17 +25,21 @@ public class TaxScheme {
     private BigDecimal sicnkessInsurance = new BigDecimal( "0.0245" );
     private BigDecimal taxDeductibleExpenses = new BigDecimal( "111.25" );
 
-    public int getTaxTresholdCount() {
-        return taxTresholds.size();
+    public int getTaxThresholdCount() {
+        return taxThresholds.size();
     }
 
     public BigDecimal getTaxValue( BigDecimal income ) {
         NavigableMap< BigDecimal, BigDecimal > taxes = new TreeMap<>();
-        for ( int i = 0; i < getTaxTresholdCount(); i++ ) {
-            taxes.put( taxTresholds.get( i ), taxValues.get( i ) );
+        for ( int i = 0; i < getTaxThresholdCount(); i++ ) {
+            taxes.put( taxThresholds.get( i ), taxValues.get( i ) );
         }
 
         return taxes.floorEntry( income ).getValue();
+    }
+
+    public BigDecimal getTaxValue( int taxThreshold ) {
+        return getTaxValue( taxThresholds.get( taxThreshold ) );
     }
 
     public BigDecimal getPensionInsurance() {

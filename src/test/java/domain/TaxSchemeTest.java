@@ -5,6 +5,8 @@ import org.junit.Test;
 
 import java.math.BigDecimal;
 
+import static org.assertj.core.api.Assertions.assertThat;
+
 public class TaxSchemeTest {
     @Test
     public void getTaxValue() throws Exception {
@@ -23,4 +25,18 @@ public class TaxSchemeTest {
         softly.assertAll();
     }
 
+    @Test
+    public void given_taxThresholdNumber_when_getTaxValue_then_returnTaxValue() throws Exception {
+        //Given
+        TaxScheme taxScheme = new TaxScheme();
+        int taxThresholdNumber = 1;
+
+        //When
+        BigDecimal taxValue = taxScheme.getTaxValue( taxThresholdNumber );
+
+        //Then
+        assertThat( taxValue ).as( "tax value on 1st tax threshold" )
+                .isNotNull()
+                .isEqualTo( "0.18" );
+    }
 }
