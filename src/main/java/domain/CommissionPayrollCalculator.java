@@ -6,7 +6,7 @@ public class CommissionPayrollCalculator extends PayrollCalculator {
 
     protected BigDecimal taxDeductibleExpenses;
 
-    protected CommissionPayrollCalculator( CommissionContract contract ) {
+    public CommissionPayrollCalculator( CommissionContract contract ) {
         super( contract );
     }
 
