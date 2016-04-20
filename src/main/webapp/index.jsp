@@ -23,7 +23,7 @@
             </div>
         </div>
         </c:if>
-        <form class="form-horizontal" role="form" action="">
+        <form class="form-horizontal" role="form" action="calculate">
             <div class="form-group">
                 <label class="control-label col-sm-offset-1 col-sm-3">Rodzaj umowy:</label>
                 <div class="col-sm-4">
@@ -39,24 +39,24 @@
                 </div>
             </div>
             <div class="form-group">
-                <label class="control-label col-sm-offset-1 col-sm-3" for="salary">Rok podatkowy:</label>
+                <label class="control-label col-sm-offset-1 col-sm-3" for="tax_year">Rok podatkowy:</label>
                 <div class="col-sm-4">
-                    <select class="form-control" type="text" id="tax_yar" name="tax_year">
+                    <select class="form-control" type="text" id="tax_year" name="tax_year">
                         <option>2016</option>
                     </select>
                 </div>
             </div>
             <div class="form-group">
-                <label class="control-label col-sm-offset-1 col-sm-3" for="salary">Wysokość wynagrodzenia:</label>
+                <label class="control-label col-sm-offset-1 col-sm-3" for="income">Wysokość wynagrodzenia:</label>
                 <div class="col-sm-4">
-                    <input class="form-control" type="text" id="salary" name="salary"/>
+                    <input class="form-control" type="text" id="income" name="income"/>
                 </div>
             </div>
             <div class="form-group">
                 <label class="control-label col-sm-offset-1 col-sm-3">Płaca: </label>
                 <div class="col-sm-4">
-                    <label class="radio-inline"><input type="radio" id="" name="income" value="gross" checked/>brutto</label>
-                    <label class="radio-inline"><input type="radio" id="" name="income" value="net"/>netto</label>
+                    <label class="radio-inline"><input type="radio" id="" name="income_type" value="gross" checked/>brutto</label>
+                    <label class="radio-inline"><input type="radio" id="" name="income_type" value="net"/>netto</label>
                 </div>
             </div>
             <!-- UMOWA ZLECENIE -->

@@ -23,11 +23,11 @@
                 <th class="col-md-2 text-center" style="vertical-align: middle">Netto</th>
             </tr>
             <tr>
-                <td><strong>a</strong></td>
-                <td>a</td>
-                <td>a</td>
-                <td>a</td>
-                <td><strong>a</strong></td>
+                <td><strong>${payroll.grossPay}</strong></td>
+                <td>${payroll.taxDeductibleExpenses}</td>
+                <td>${payroll.taxBasis}</td>
+                <td>${payroll.pitAdvancePayment}</td>
+                <td><strong>${payroll.netPay}</strong></td>
             </tr>
         </table>
     </div>

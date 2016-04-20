@@ -26,20 +26,22 @@
             <tr>
                 <th class="col-md-1 text-center">emerytalne</th>
                 <th class="col-md-1 text-center">rentowe</th>
-                <th class="col-md-1 text-center">zdrowotne</th>
                 <th class="col-md-1 text-center">chorobowe</th>
+                <th class="col-md-1 text-center">zdrowotne</th>
             </tr>
+            <c:forEach var="payroll" items="${payroll_list}">
             <tr>
-                <td><strong>a</strong></td>
-                <td><strong>a</strong></td>
-                <td>a</td>
-                <td>a</td>
-                <td>a</td>
-                <td>a</td>
-                <td>a</td>
-                <td>a</td>
-                <td><strong>a</strong></td>
+                <td><strong>${payroll.month}</strong></td>
+                <td><strong>${payroll.grossPay}</strong></td>
+                <td>${payroll.pensionInsurance}</td>
+                <td>${payroll.disabilityInsurance}</td>
+                <td>${payroll.sicknessInsurance}</td>
+                <td>${payroll.healtcareInsurance}</td>
+                <td>${payroll.taxBasis}</td>
+                <td>${payroll.pitAdvancePayment}</td>
+                <td><strong>${payroll.netPay}</strong></td>
             </tr>
+            </c:forEach>
         </table>
     </div>
 </div>
