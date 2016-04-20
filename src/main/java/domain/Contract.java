@@ -9,6 +9,7 @@ public abstract class Contract {
         NET
     }
 
+    private String taxYear;
     private BigDecimal income;
     private IncomeType incomeType;
 
@@ -34,5 +35,13 @@ public abstract class Contract {
 
     public void setIncomeType( IncomeType incomeType ) {
         this.incomeType = incomeType;
+    }
+
+    public void setTaxYear( String taxYear ) {
+        this.taxYear = taxYear;
+    }
+
+    public String getTaxYear() {
+        return taxYear;
     }
 }
