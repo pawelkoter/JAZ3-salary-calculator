@@ -8,9 +8,9 @@ public class Payroll {
     private BigDecimal grossPay;
     private BigDecimal netPay;
     private BigDecimal pensionInsurance;
-    private BigDecimal diasbilityInsurance;
+    private BigDecimal disabilityInsurance;
     private BigDecimal healtcareInsurance;
-    private BigDecimal sicnessInsurance;
+    private BigDecimal sicknessInsurance;
     private BigDecimal taxDeductibleExpenses;
     private BigDecimal taxBasis;
     private BigDecimal pitAdvancePayment;
@@ -47,12 +47,12 @@ public class Payroll {
         this.pensionInsurance = pensionInsurance;
     }
 
-    public BigDecimal getDiasbilityInsurance() {
-        return diasbilityInsurance;
+    public BigDecimal getDisabilityInsurance() {
+        return disabilityInsurance;
     }
 
-    public void setDiasbilityInsurance( BigDecimal diasbilityInsurance ) {
-        this.diasbilityInsurance = diasbilityInsurance;
+    public void setDisabilityInsurance( BigDecimal disabilityInsurance ) {
+        this.disabilityInsurance = disabilityInsurance;
     }
 
     public BigDecimal getHealtcareInsurance() {
@@ -63,12 +63,12 @@ public class Payroll {
         this.healtcareInsurance = healtcareInsurance;
     }
 
-    public BigDecimal getSicnessInsurance() {
-        return sicnessInsurance;
+    public BigDecimal getSicknessInsurance() {
+        return sicknessInsurance;
     }
 
-    public void setSicnessInsurance( BigDecimal sicnessInsurance ) {
-        this.sicnessInsurance = sicnessInsurance;
+    public void setSicknessInsurance( BigDecimal sicknessInsurance ) {
+        this.sicknessInsurance = sicknessInsurance;
     }
 
     public BigDecimal getTaxDeductibleExpenses() {
